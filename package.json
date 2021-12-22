@@ -7,8 +7,9 @@
     "build": "preact build",
     "serve": "sirv build --port 5000 --cors --single",
     "dev": "PORT=5000 preact watch",
-    "lint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write .",
+    "lint": "prettier --check ."
   },
   "eslintConfig": {
     "extends": "preact",
@@ -29,7 +30,8 @@
   "dependencies": {
     "preact": "^10.3.2",
     "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1"
+    "preact-router": "^3.2.1",
+    "prettier": "^2.5.1"
   },
   "jest": {
     "preset": "jest-preset-preact",
